@@ -1,0 +1,22 @@
+Defensive Publication – Prior Art Disclosure
+Title: Proactive Alarm Suppression for On-Call Workers Based on Recent Direct Messages in a Designated Messaging Application
+Date: November 18, 2025
+Author: [Your name or nikolaaz] – Montenegro
+
+Full description of the invention:
+A mobile application (Android and/or iOS) that allows on-call and night-shift workers to sleep without unnecessary wake-ups.
+
+The user selects one messaging application (Telegram, WhatsApp, Discord, Slack, Signal, Microsoft Teams, etc.) that is used for work call-outs.
+
+The user enables recurring alarms (every 15–30 minutes) during sleep hours — either created by the app itself using AlarmManager/PendingIntent or by external alarm apps.
+
+A background service continuously or periodically monitors incoming direct messages/private messages in the selected messaging app using official system APIs (Android NotificationListenerService or iOS equivalent).
+
+10 minutes (user-configurable) before each upcoming alarm, the app checks the timestamp of the last qualifying message.
+
+- If no message in the last X minutes → the app silently cancels/skips/prevents the next alarm from firing.
+- If a message arrived in the last X minutes → the alarm rings normally.
+
+This exact proactive cancellation based on recent DMs in one specific app does not exist in any publicly available app as of November 18, 2025.
+
+This document is intentionally published as prior art to prevent patenting by anyone worldwide.
