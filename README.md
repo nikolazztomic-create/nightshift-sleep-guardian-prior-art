@@ -20,8 +20,7 @@ This exact proactive cancellation based on recent DMs in one specific app does n
 
 ### Technical implementation (Android example)
 - Uses Android’s official NotificationListenerService (permission granted by user)
-- Uses AlarmManager + PendingIntent for creating and cancelling alarms
-- Background WorkManager checks 5–10 minutes before each alarm
+
 - If no qualifying notification in the time window → cancel the PendingIntent
 
 This disclosure is intentional and permanent prior art under 35 U.S.C. § 102 / EPC Article 54.
