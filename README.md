@@ -23,6 +23,4 @@ This exact proactive cancellation based on recent DMs in one specific app does n
 
 - If no qualifying notification in the time window → cancel the PendingIntent
 
-This disclosure is intentional and permanent prior art under 35 U.S.C. § 102 / EPC Article 54.
-
-License: CC0 1.0 (public domain) – anyone can use the idea freely.
+This disclosure is intentional and permanent prior art under 35 U.S.C. § 102 / EPC Article 
